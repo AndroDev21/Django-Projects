@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>
+     body {
+        color: #32CD32;
+        text-align: center;
+        font-size: 32px;
+      } 
+ 
+    </style>
+  </head>
+  <body>
+    
+    <h1>Hello {{ user.username|default:'Guest' }},</h1>
+
+    <p>Welcome to xyz.com</p>
+    <div>
+      {% if user.is_authenticated %}
+          <a href="{% url 'logout' %}">Logout</a>
+    
+      {% else %}
+          <a href="{% url 'login' %}">Login</a>
+          <a href="{% url 'signup' %}">Sign Up</a>
+      {% endif %}
+  </div>
+  
+  </body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+    background-color: #2E3440;
+}
+
+.badge {
+    font-size: larger;
+}
+
+input {
+    background-color: #3B4252;
+    color: #81A1C1;
+}
+
+img {
+    width: 50%;
+}
