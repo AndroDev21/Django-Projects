@@ -55,7 +55,7 @@ ROOT_URLCONF = 'task1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'/mnt/Data/Coding/Python/Django/tasks_22-1-2022/task1/app1/templates'],
+        'DIRS': [r'/mnt/Data/Coding/Python/Django/Django Projects/tasks_22-1-2022/task1/app1/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,7 +118,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,r'/mnt/Data/Coding/Python/Django/tasks_22-1-2022/task1/static')
+    os.path.join(BASE_DIR,r'/mnt/Data/Coding/Python/Django/Django Projects/tasks_22-1-2022/task1/static')
 ]
 
 # Default primary key field type
