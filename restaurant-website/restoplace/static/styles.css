@@ -1,0 +1,31 @@
+.relative {
+    position: relative;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.footer {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
