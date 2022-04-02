@@ -119,7 +119,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,r'/mnt/Data/Coding/Python/Django/Django Projects/restaurant-website/restoplace/static')
+    os.path.join(BASE_DIR,r'static')
 ]
 
 # Default primary key field type
