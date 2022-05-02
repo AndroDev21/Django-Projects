@@ -10,8 +10,9 @@ departments=[('Cardiologist','Cardiologist'),
 ('Anesthesiologists','Anesthesiologists'),
 ('Colon and Rectal Surgeons','Colon and Rectal Surgeons')
 ]
+
 class Doctor(models.Model):
-    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    user=models.OneToOneField(User,on_delete=models.CASCADE,null=True)
     profile_pic= models.ImageField(upload_to='profile_pic/DoctorProfilePic/',null=True,blank=True)
     mobile = models.CharField(max_length=10,null=True)
     department= models.CharField(max_length=50,choices=departments,default='Cardiologist')
@@ -28,7 +29,7 @@ class Doctor(models.Model):
 
 
 class Patient(models.Model):
-    user=models.OneToOneField(User,on_delete=models.CASCADE)
+    user=models.OneToOneField(User,on_delete=models.CASCADE,null=True)
     profile_pic= models.ImageField(upload_to='profile_pic/PatientProfilePic/',null=True,blank=True)
     mobile = models.CharField(max_length=10,null=False)
     symptoms = models.CharField(max_length=100,null=False)

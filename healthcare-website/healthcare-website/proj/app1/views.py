@@ -16,7 +16,7 @@ def home(request):
 def about(request):
     return render(request,'about.html')
 
-def admin_signup_view(request):
+def admin_signup(request):
     form=forms.AdminSigupForm()
     if request.method=='POST':
         form=forms.AdminSigupForm(request.POST)
